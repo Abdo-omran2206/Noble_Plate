@@ -31,15 +31,12 @@ body {
 
 /* Banner #about with background */
 .banner {
-    height: 100vh;
+    height: 100dvh;
     background-image: url("logo/Leonardo_Kino_XL_Design_a_luxurious_background_cover_photo_for_3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .banner::before {
@@ -80,9 +77,12 @@ nav {
     text-decoration: none;
     text-shadow: var(--text-shad);
 }
-.logo::selection , p::selection , h1::selection{
+.logo::selection , h1::selection{
     background: rgba(0, 0, 0, 0);
     color: var(--highlight-color);
+}
+p::selection{
+    color:var(--primary-color);
 }
 .navigation-links {
     display: flex;
@@ -128,6 +128,8 @@ nav {
     text-align: center;
     color: var(--text-color);
     padding: 0 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .banner-content img {
@@ -245,6 +247,8 @@ nav {
 
     .navigation-links.active {
         display: flex;
+        background: rgba(10, 10, 31, 0.7); /* Deep Navy with transparency */
+        backdrop-filter: blur(20px);
     }
 
     .banner-content h1 {
@@ -255,25 +259,33 @@ nav {
 .about {
     width: 100%;
     height: 100dvh;
-    padding: 20px 0;
+    padding: 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--dark-brass);
+    background-image:url('logo/Leonardo_Kino_XL_Design_the_exterior_of_a_luxurious_fine_dinin_3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
 .about .box {
-    width: 95%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    background-color: #000;
+    background:linear-gradient(to right,var(--dark-brass) 25%,#2e384601);
 }
 
 .about .box > div {
     width: 50%;
     display: flex;
+    padding-left: 20px;
 }
 .about .box .img-box{
     justify-content: center;
@@ -314,14 +326,18 @@ nav {
 @media (max-width: 768px) {
     .about .box {
         flex-direction: column;
+        background:linear-gradient(to top,var(--secondary-color) 1%,#2e384601);
+        justify-content: end;
     }
 
     .about {
         height: 100dvh;
+        background-position:center;
     }
 
     .about .box > div {
         width: 100%;
+        height: 40%;
     }
 
     .about .box .text {
@@ -346,7 +362,11 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+.std h2{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-shadow: 5px 5px 10px var(--dark-brass);
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -418,7 +438,7 @@ nav {
 
 .active,
 .dot:hover {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
 }
 
 /* Fading animation */
@@ -454,7 +474,7 @@ nav {
 
 @media (max-width: 768px) {
     .std {
-        padding: 30px 0;
+        padding: 50px 0;
     }
 
     .std .box {
@@ -465,7 +485,7 @@ nav {
         height: 150px;
     }
     .mySlides img {
-        height: 400px; /* Adjust for mobile */
+        height: 250px; /* Adjust for mobile */
     }
 }
 
