@@ -1,7 +1,7 @@
 <div align="center">
   <h1 style='text-align:center;'>Noble Plate Restaurant Website</h1>
   <br>
-  <img src="logo/Leonardo_Kino_XL_Create_a_luxury_restaurant_logo_for_a_fine_di_0.jpg" alt="Noble Plate Logo" width="200"/>
+  <img src="logo/Leonardo_Kino_XL_Create_a_luxury_restaurant_logo_for_a_fine_di_0.jpg" alt="Noble Plate Logo" width="200" style="border-radius:50%;"/>
 </div>
 
 A modern, responsive website for Noble Plate Restaurant, showcasing fine dining experiences with elegant design and user-friendly features.
