@@ -343,6 +343,7 @@ p::selection{
     .about .box .text {
         text-align: center;
         align-items: center;
+        margin:0 0 2rem 0;
     }
     .about .text h2{
         margin: 0 0 2rem 0;
