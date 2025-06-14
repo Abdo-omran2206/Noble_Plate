@@ -285,7 +285,7 @@ p::selection{
 .about .box > div {
     width: 50%;
     display: flex;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 .about .box .img-box{
     justify-content: center;
@@ -486,7 +486,7 @@ p::selection{
         height: 150px;
     }
     .mySlides img {
-        height: 150px; /* Adjust for mobile */
+        height: 200px; /* Adjust for mobile */
     }
 }
 
